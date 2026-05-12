@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ESO БГ — Батерии в Диаграмата",
+  "version": "1.0",
+  "description": "Показва скритото разреждане на ССЕЕ/батерии в диаграмата за генерация на ЕСО.",
+  "content_scripts": [{
+    "matches": ["https://www.eso.bg/*"],
+    "js": ["content.js"],
+    "run_at": "document_start",
+    "world": "MAIN"
+  }]
+}
